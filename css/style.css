@@ -20,7 +20,6 @@ html {
 
 body {
   height: 100vh;
-  font-family: 'Cutive Mono', monospace;
 }
 
 .content {
@@ -29,6 +28,7 @@ body {
   height: 100%;
   background-color: var(--dark-color);
   color: var(--light-color);
+  font-family: 'Cutive Mono', monospace;
 }
 
 h1 {
