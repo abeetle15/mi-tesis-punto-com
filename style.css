@@ -39,6 +39,10 @@ body {
   text-align: center;
 }
 
+.contTitulo {
+  transition: 20ms;
+}
+
 h1 {
   font-family: 'Rubik Mono One', monospace;
   font-size: 4em;
