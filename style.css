@@ -10,7 +10,7 @@ html {
 
 :root {
   --dark-color: rgb(121, 77, 187);
-  --light-color: rgb(247, 185, 9);
+  --light-color: #D8DABE;
 }
 
 * {
@@ -37,7 +37,7 @@ body {
   background-color: black;
   color: white;
   text-align: center;
-  padding: 0 10px;
+  padding: 0 0.6em;
 }
 
 video {
@@ -51,20 +51,22 @@ video {
 }
 
 .contTitulo {
-  transition: 20ms;
+  transition: 30ms;
   z-index: 2;
 }
 
 h1 {
   font-family: 'Rubik Mono One', monospace;
-  font-size: 4em;
+  letter-spacing: 0.6rem;
+  font-size: 3em;
   margin-top: 2em;
 }
 
 .subtitulo {
   display: none;
   position: relative;
-  margin-top: -50px;
+  margin-top: -2.3rem;
+  font-size: 0.7em;
 }
 
 .contGoHome {
@@ -88,8 +90,8 @@ h1 {
 }
 
 .contTitulo:hover {
-  transform: scale(1.1);
-  cursor: pointer;
+  transform: scale(1.6);
+  cursor: help;
 }
 
 .goHomeText {
@@ -97,12 +99,12 @@ h1 {
   margin-top: -20px;
 }
 
+.hover {
+  display: block;
+}
+
 .goHomeText.hover {
   transform: rotate(20deg);
   position: relative;
   top: -60px
-}
-
-.hover {
-  display: block;
 }
