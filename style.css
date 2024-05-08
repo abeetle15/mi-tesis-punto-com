@@ -9,7 +9,7 @@ html {
 }
 
 :root {
-  --dark-color: rgb(68, 21, 138);
+  --dark-color: rgb(121, 77, 187);
   --light-color: rgb(247, 185, 9);
 }
 
@@ -40,8 +40,19 @@ body {
   padding: 0 10px;
 }
 
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
 .contTitulo {
   transition: 20ms;
+  z-index: 2;
 }
 
 h1 {
