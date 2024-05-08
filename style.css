@@ -37,6 +37,7 @@ body {
   background-color: black;
   color: white;
   text-align: center;
+  padding: 0 10px;
 }
 
 .contTitulo {
@@ -70,7 +71,7 @@ h1 {
   transition: 20ms;
 }
 
-.orquidea:hover {
+.contGoHome:hover {
   transform: rotate(-20deg) scale(1.1);
   cursor: pointer;
 }
@@ -83,6 +84,12 @@ h1 {
 .goHomeText {
   display: none;
   margin-top: -20px;
+}
+
+.goHomeText.hover {
+  transform: rotate(20deg);
+  position: relative;
+  top: -60px
 }
 
 .hover {
