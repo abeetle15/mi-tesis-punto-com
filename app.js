@@ -1,23 +1,51 @@
-const goHome = document.querySelector('.contGoHome')
-const goHomeText = document.querySelector('.goHomeText')
-const titulo = document.querySelector('.contTitulo')
-const subtitulo = document.querySelector('.subtitulo')
+const contInfo = document.querySelector('.contInfo')
+const contNotes = document.querySelector('.contNotes')
+const contBitacora = document.querySelector('.contBitacora')
+const contReferentes = document.querySelector('.contReferentes')
+
+const infoText = document.querySelector('.infoText')
+const notesText = document.querySelector('.notesText')
+const bitacoraText = document.querySelector('.bitacoraText')
+const referentesText = document.querySelector('.referentesText')
 
 
 
-goHome.addEventListener('mouseenter', () => {
-  goHomeText.classList.toggle('hover')
-  console.log(goHomeText.classList)
+
+
+contInfo.addEventListener('mouseenter', () => {
+  infoText.classList.toggle('hover')
+
 })
-goHome.addEventListener('mouseleave', () => {
-  goHomeText.classList.toggle('hover')
-  console.log(goHomeText.classList)
+contInfo.addEventListener('mouseleave', () => {
+  infoText.classList.toggle('hover')
+
 })
-titulo.addEventListener('mouseenter', () => {
-  subtitulo.classList.toggle('hover')
-  console.log(subtitulo.classList)
+
+contNotes.addEventListener('mouseenter', () => {
+  notesText.classList.toggle('hover')
+
 })
-titulo.addEventListener('mouseleave', () => {
-  subtitulo.classList.toggle('hover')
-  console.log(subtitulo.classList)
+contNotes.addEventListener('mouseleave', () => {
+  notesText.classList.toggle('hover')
+
 })
+
+contBitacora.addEventListener('mouseenter', () => {
+  bitacoraText.classList.toggle('hover')
+
+})
+contBitacora.addEventListener('mouseleave', () => {
+  bitacoraText.classList.toggle('hover')
+
+})
+
+contReferentes.addEventListener('mouseenter', () => {
+  referentesText.classList.toggle('hover')
+
+})
+contReferentes.addEventListener('mouseleave', () => {
+  referentesText.classList.toggle('hover')
+
+})
+
+

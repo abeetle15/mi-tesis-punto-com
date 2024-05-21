@@ -10,7 +10,7 @@ html {
 
 :root {
   --dark-color: rgb(121, 77, 187);
-  --light-color: #EAD1D5;
+  --light-color: #0abf16;
 }
 
 * {
@@ -33,12 +33,6 @@ body {
   align-items: center;
 }
 
-.popUpText {
-  background-color: black;
-  color: white;
-  text-align: center;
-  padding: 0 0.6em;
-}
 
 video {
   position: absolute;
@@ -67,12 +61,22 @@ h1 {
   position: absolute;
   top: 34%;
   left: 15%;
+  transition: 20ms;
 }
 
 .infoBtn {
   z-index: 5;
   width: 150px;
 
+}
+
+.contInfo:hover,
+.contNotes:hover,
+.contBitacora:hover,
+.contReferentes:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  /* box-shadow: 0 0 10px 10px yellow; */
 }
 
 .contNotes {
@@ -85,6 +89,7 @@ h1 {
   z-index: 5;
   width: 150px;
 }
+
 
 .contBitacora {
   position: absolute;
@@ -109,6 +114,13 @@ h1 {
 }
 
 /* ---------------------------------- info ---------------------------------- */
+.popUpText {
+  background-color: black;
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  display: none;
+}
 
 .contBtns {
   display: flex;
@@ -118,13 +130,8 @@ h1 {
 
 }
 
-.hover {
-  display: block;
-}
-
-.orquidea {
-  height: 160px;
-  transition: 20ms;
+.goHomeBtn {
+  width: 150px;
 }
 
 .contGoHome {
@@ -134,7 +141,6 @@ h1 {
 }
 
 .contGoHome:hover {
-  transform: rotate(-20deg) scale(1.1);
   cursor: pointer;
 }
 
@@ -149,7 +155,19 @@ h1 {
 }
 
 .goHomeText.hover {
-  transform: rotate(20deg);
-  position: relative;
-  top: -60px
+  align-self: center;
+  justify-self: center;
+  width: 100%;
+  color: yellow;
+  font-size: 1.5rem;
+}
+
+.hover {
+  display: block;
+  position: absolute;
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+  color: yellow;
+  z-index: 10;
 }

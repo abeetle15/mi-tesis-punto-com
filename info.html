@@ -10,16 +10,31 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Rubik+Mono+One&display=swap=Jersey+10&display=swap"
     rel="stylesheet">
-  <script defer src="app.js"></script>
+
   <title>info sobre mi</title>
 </head>
 
 <body>
   <div class="contGoHome">
-    <img class='orquidea' src="imagenes/orchid.png" alt="orquidea">
+    <img class='goHomeBtn' src="imagenes/cool-monitor.svg" alt="orquidea">
     <p class="goHomeText popUpText">vuelve a casa</p>
   </div>
 
+
+
+
+  <script>
+    const goHome = document.querySelector('.contGoHome')
+    const goHomeText = document.querySelector('.goHomeText')
+
+    goHome.addEventListener('mouseenter', () => {
+      goHomeText.classList.toggle('hover')
+    })
+    goHome.addEventListener('mouseleave', () => {
+      goHomeText.classList.toggle('hover')
+
+    })
+  </script>
 </body>
 
 </html>
