@@ -18,7 +18,7 @@ html {
   margin: 0;
 }
 
-body {
+.content {
   height: 100vh;
 }
 
@@ -51,7 +51,7 @@ video {
 
 h1 {
   font-family: 'Jersey 10', monospace;
-  letter-spacing: 1rem;
+  letter-spacing: 1.5rem;
   font-size: 6rem;
   margin-top: 3rem;
 }
@@ -116,8 +116,7 @@ h1 {
 /* ---------------------------------- info ---------------------------------- */
 .popUpText {
   background-color: black;
-  color: white;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   text-align: center;
   display: none;
 }
@@ -127,7 +126,6 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 
 .goHomeBtn {
@@ -136,17 +134,17 @@ h1 {
 
 .contGoHome {
   position: absolute;
-  top: 1px;
+  top: 15px;
   left: 30px;
 }
 
 .contGoHome:hover {
   cursor: pointer;
+  transform: scale(1.1);
 }
 
 .goHomeText {
-  display: none;
-  margin-top: -20px;
+  text-align: center;
 }
 
 .contTitulo:hover {
@@ -154,20 +152,14 @@ h1 {
   cursor: help;
 }
 
-.goHomeText.hover {
-  align-self: center;
-  justify-self: center;
-  width: 100%;
-  color: yellow;
-  font-size: 1.5rem;
-}
 
 .hover {
-  display: block;
+  display: flex;
   position: absolute;
   justify-self: center;
   align-self: center;
   width: 100%;
   color: yellow;
   z-index: 10;
+  text-align: center;
 }

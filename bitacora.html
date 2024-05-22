@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Rubik+Mono+One&display=swap=Jersey+10&display=swap"
+    rel="stylesheet">
+
+  <title>bitacora del proceso</title>
+</head>
+
+<body>
+  <div class="content">
+    <a href="index.html">
+      <div class="contGoHome contBtns">
+        <img class='goHomeBtn' src="imagenes/cool-monitor.svg" alt="orquidea">
+        <p class="goHomeText popUpText">vuelve a casa</p>
+      </div>
+    </a>
+  </div>
+
+
+
+  <script>
+    const goHome = document.querySelector('.contGoHome')
+    const goHomeText = document.querySelector('.goHomeText')
+
+    goHome.addEventListener('mouseenter', () => {
+      goHomeText.classList.toggle('hover')
+    })
+    goHome.addEventListener('mouseleave', () => {
+      goHomeText.classList.toggle('hover')
+
+    })
+  </script>
+</body>
+
+</html>
