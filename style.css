@@ -8,8 +8,17 @@ html {
   box-sizing: inherit;
 }
 
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
 :root {
-  --dark-color: rgb(121, 77, 187);
+  --dark-color: rgb(200, 166, 252);
   --light-color: #fcf305;
 }
 
@@ -18,13 +27,9 @@ html {
   margin: 0;
 }
 
+/* --------------------------------- global --------------------------------- */
 .content {
-  height: 100vh;
-}
-
-.content {
-  width: 100%;
-  height: 100%;
+  height: 100svh;
   background-color: var(--dark-color);
   color: var(--light-color);
   font-family: 'Cutive Mono', monospace;
@@ -33,87 +38,6 @@ html {
   align-items: center;
 }
 
-
-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-}
-
-.contTitulo {
-  transition: 30ms;
-  z-index: 2;
-}
-
-h1 {
-  font-family: 'Jersey 10', monospace;
-  letter-spacing: 1.5rem;
-  font-size: 6rem;
-  margin-top: 3rem;
-}
-
-
-.contInfo {
-  position: absolute;
-  top: 34%;
-  left: 15%;
-  transition: 20ms;
-}
-
-.infoBtn {
-  z-index: 5;
-  width: 150px;
-
-}
-
-.contInfo:hover,
-.contNotes:hover,
-.contBitacora:hover,
-.contReferentes:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-  /* box-shadow: 0 0 10px 10px yellow; */
-}
-
-.contNotes {
-  position: absolute;
-  top: 65%;
-  left: 20%;
-}
-
-.notesBtn {
-  z-index: 5;
-  width: 150px;
-}
-
-
-.contBitacora {
-  position: absolute;
-  top: 34%;
-  right: 15%;
-}
-
-.bitacoraBtn {
-  z-index: 5;
-  width: 150px;
-}
-
-.contReferentes {
-  position: absolute;
-  top: 65%;
-  right: 20%;
-}
-
-.referentesBtn {
-  z-index: 5;
-  width: 150px;
-}
-
-/* ---------------------------------- info ---------------------------------- */
 .popUpText {
   background-color: black;
   font-size: 1.4rem;
@@ -152,7 +76,6 @@ h1 {
   cursor: help;
 }
 
-
 .hover {
   display: flex;
   position: absolute;
@@ -162,4 +85,150 @@ h1 {
   color: yellow;
   z-index: 10;
   text-align: center;
+}
+
+/* -------------------------------- home page ------------------------------- */
+
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.contTitulo {
+  transition: 30ms;
+  z-index: 2;
+}
+
+h1 {
+  font-family: 'Jersey 10', monospace;
+  letter-spacing: 1.5rem;
+  font-size: 6rem;
+  margin-top: 3rem;
+}
+
+
+.contInfo {
+  position: absolute;
+  top: 34%;
+  left: 15%;
+  transition: 20ms;
+}
+
+.infoBtn {
+  z-index: 5;
+  width: 150px;
+
+}
+
+.contNotes {
+  position: absolute;
+  top: 65%;
+  left: 20%;
+}
+
+.notesBtn {
+  z-index: 5;
+  width: 150px;
+}
+
+.contBitacora {
+  position: absolute;
+  top: 34%;
+  right: 15%;
+}
+
+.bitacoraBtn {
+  z-index: 5;
+  width: 150px;
+}
+
+.contReferentes {
+  position: absolute;
+  top: 65%;
+  right: 20%;
+}
+
+.referentesBtn {
+  z-index: 5;
+  width: 150px;
+}
+
+.contInfo:hover,
+.contNotes:hover,
+.contBitacora:hover,
+.contReferentes:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  /* box-shadow: 0 0 10px 10px yellow; */
+}
+
+/* ---------------------------------- info ---------------------------------- */
+.content-info {
+  height: 100svh;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  font-family: 'Cutive Mono', monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.titulo-bio {
+  margin-left: 17%;
+  font-size: 8rem;
+}
+
+.subtitulo-bio {
+  margin-left: 17%;
+}
+
+.bio-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 47%;
+  position: absolute;
+  top: 54%;
+  left: 4%;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.foto-cow {
+  width: 40%;
+  position: absolute;
+  top: 10%;
+  right: 6%;
+}
+
+.foto-cow:hover {
+  cursor: grab;
+}
+
+.foto-cow:active {
+  cursor: grabbing;
+  user-select: none;
+}
+
+#movableImg {
+  position: absolute;
+}
+
+.contacto {
+  display: flex;
+  flex-shrink: 2;
+  width: 40%;
+  position: absolute;
+  bottom: 20%;
+  right: 6%;
+  font-family: 'Jersey 10', monospace;
+  letter-spacing: 1rem;
+  font-size: 2rem;
 }

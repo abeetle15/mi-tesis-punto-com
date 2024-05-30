@@ -4,24 +4,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Rubik+Mono+One&display=swap=Jersey+10&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 
   <title>info sobre mi</title>
 </head>
 
 <body>
-  <div class="content">
+  <div class="content-info">
+
     <a href="index.html">
       <div class="contGoHome contBtns">
         <img class='goHomeBtn' src="imagenes/cool-monitor.svg" alt="orquidea">
         <p class="goHomeText popUpText">vuelve a casa</p>
       </div>
     </a>
+
+    <h1 class="titulo-bio">laura sophia bacca</h1>
+    <h2 class="subtitulo-bio">bogotá, 2000</h2>
+
+    <div class="bio-text">
+      <p>Soy Laura Bacca, una artista sonora de Bogotá, Colombia. Me especializo en música electroacústica, arte sonoro
+        e instalación sonora. Mi fuerte es el live coding y la composición acusmática, técnicas que utilizo para
+        explorar y expandir los límites del sonido.
+      </p>
+
+      <p>
+        Creo firmemente en el poder del sonido para unir a las personas como comunidad. Mi trabajo se inspira en la
+        idea
+        de que la música y la tecnología pueden ser herramientas poderosas para la conexión humana, en lugar de factores
+        de aislamiento. Mi objetivo es romper las barreras entre el artista y la audiencia, fomentando la escucha y la
+        interacción para replantear la forma en que percibimos y nos relacionamos con los demás.
+      </p>
+    </div>
+
+    <div class="foto-cow">
+      <img id="movableImg" src="imagenes/vaca recostada.jpeg" alt="foto de cow">
+    </div>
+
+    <div class="contacto">
+      <p>lala.bacca@gmail.com</p>
+    </div>
+
+
+
   </div>
 
 
@@ -37,6 +67,35 @@
       goHomeText.classList.toggle('hover')
 
     })
+
+    const draggable = document.querySelector('.foto-cow');
+
+    let posX = 0,
+      posY = 0,
+      mouseX = 0,
+      mouseY = 0;
+
+    draggable.addEventListener('mousedown', mouseDown, false);
+    window.addEventListener('mouseup', mouseUp, false);
+
+    function mouseDown(e) {
+      e.preventDefault();
+      posX = e.clientX - draggable.offsetLeft;
+      posY = e.clientY - draggable.offsetTop;
+      window.addEventListener('mousemove', moveElement, false);
+    }
+
+    function mouseUp() {
+      window.removeEventListener('mousemove', moveElement, false);
+    }
+
+    function moveElement(e) {
+      mouseX = e.clientX - posX;
+      mouseY = e.clientY - posY;
+      draggable.style.left = mouseX + 'px';
+      draggable.style.top = mouseY + 'px';
+    }
+
   </script>
 </body>
 
