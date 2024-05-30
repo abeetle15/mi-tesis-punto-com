@@ -13,13 +13,15 @@ picture,
 video,
 canvas,
 svg {
-  display: block;
   max-width: 100%;
+  object-fit: cover;
 }
 
 :root {
   --dark-color: rgb(200, 166, 252);
   --light-color: #fcf305;
+  --black: #141414;
+  --green: #EAFC88;
 }
 
 * {
@@ -183,10 +185,12 @@ h1 {
 .titulo-bio {
   margin-left: 17%;
   font-size: 8rem;
+
 }
 
 .subtitulo-bio {
   margin-left: 17%;
+
 }
 
 .bio-text {
@@ -199,6 +203,7 @@ h1 {
   left: 4%;
   font-size: 1.2rem;
   font-weight: 800;
+
 }
 
 .foto-cow {
@@ -206,6 +211,7 @@ h1 {
   position: absolute;
   top: 10%;
   right: 6%;
+
 }
 
 .foto-cow:hover {
@@ -231,4 +237,92 @@ h1 {
   font-family: 'Jersey 10', monospace;
   letter-spacing: 1rem;
   font-size: 2rem;
+}
+
+/* ------------------------------- referentes ------------------------------- */
+.content-referentes {
+  height: 100svh;
+  background-color: var(--black);
+  color: var(--green);
+  font-family: 'Cutive Mono', monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.titulo-referentes {
+  align-self: flex-end;
+  margin-right: 1em;
+  transition: 100ms;
+}
+
+.titulo-referentes:hover {
+  transform: scale(2);
+}
+
+.cont-referente {
+  width: 210px;
+  height: 210px;
+  position: absolute;
+  transition: 130ms;
+}
+
+.cont-referente:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 10px 30px #df5be6;
+}
+
+.foto-larga {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.cont-referente.brad {
+  top: 47%;
+  left: 5%;
+}
+
+.cont-referente.brad:hover {
+  transform: skew(12deg, 30deg) translateY(-40px);
+}
+
+
+.cont-referente.njinla {
+  top: 8%;
+  left: 32%;
+  height: 210px;
+}
+
+
+.cont-referente.njinla:hover {
+  transform: skew(20deg, 25deg) translateY(40px);
+}
+
+.cont-referente.mileece {
+  top: 67%;
+  left: 25%;
+}
+
+.cont-referente.mileece:hover {
+  transform: skew(-15deg, -20deg) translateY(-50px);
+}
+
+.cont-referente.soundStudies {
+  top: 27%;
+  right: 12%;
+}
+
+.cont-referente.soundStudies:hover {
+  transform: skew(30deg, 15deg) translateY(50px);
+}
+
+.cont-referente.radioArt {
+  top: 52%;
+  right: 34%;
+}
+
+.cont-referente.radioArt:hover {
+  transform: skew(-20deg, -15deg) translateY(-50px);
 }

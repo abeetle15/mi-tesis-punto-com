@@ -10,8 +10,6 @@ const referentesText = document.querySelector('.referentesText')
 
 
 
-
-
 contInfo.addEventListener('mouseenter', () => {
   infoText.classList.toggle('hover')
 
