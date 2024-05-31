@@ -27,8 +27,8 @@ svg {
   --yellow: #f9e395;
   --blue: #D3D9F1;
   --red: #FF6424;
-  --pink: #F5CEC7;
-  --darker-pink: #E79796;
+  --pink: #f5d4ce;
+  --darker-pink: #f48c8a;
 
 }
 
@@ -384,6 +384,7 @@ h1 {
 
 .underline {
   text-decoration: underline;
+  font-weight: 900;
 }
 
 .meta-def:hover {
