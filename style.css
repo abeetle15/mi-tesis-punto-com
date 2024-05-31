@@ -23,8 +23,8 @@ svg {
   --black: #141414;
   --green: #EAFC88;
   --cream: #FFFEEC;
-  --orange: #fdae2f;
-  --yellow: #fbe287;
+  --orange: #ffa310;
+  --yellow: #f9e395;
   --blue: #D3D9F1;
   --red: #FF6424;
   --pink: #F5CEC7;
@@ -358,11 +358,11 @@ h1 {
 .titulo-notas {
   align-self: flex-end;
   margin-right: 10px;
-  transition: 800ms;
+  transition: 3s;
 }
 
 .titulo-notas:hover {
-  transform: scale(3.4) translateX(11%);
+  transform: scale(9) translateX(11%);
 }
 
 .sub-notas {
@@ -458,7 +458,7 @@ h1 {
 
 .quote>p {
   text-align: right;
-  transition: 1s;
+  transition: 500ms;
 }
 
 .quote>p:hover {
@@ -467,7 +467,7 @@ h1 {
 
 .pie {
   margin: 2em 30% 2em 1em;
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-weight: 800;
 }
 
