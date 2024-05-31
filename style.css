@@ -18,10 +18,18 @@ svg {
 }
 
 :root {
-  --dark-color: rgb(200, 166, 252);
+  --dark-color: #BDB4FF;
   --light-color: #EAFC88;
   --black: #141414;
   --green: #EAFC88;
+  --cream: #FFFEEC;
+  --orange: #fdae2f;
+  --yellow: #fbe287;
+  --blue: #D3D9F1;
+  --red: #FF6424;
+  --pink: #F5CEC7;
+  --darker-pink: #E79796;
+
 }
 
 * {
@@ -74,7 +82,7 @@ svg {
 }
 
 .contTitulo:hover {
-  transform: scale(5) translateX(10%);
+  transform: scale(5) translateX(8%);
   cursor: help;
 }
 
@@ -195,7 +203,6 @@ h1 {
 
 .subtitulo-bio {
   margin-left: 17%;
-
 }
 
 .bio-text {
@@ -334,4 +341,169 @@ h1 {
 
 .cont-referente.radioArt:hover {
   transform: skew(-2deg, -3deg) translateY(-50px);
+}
+
+/* --------------------------- notas del programa --------------------------- */
+
+.content-notas {
+  background-color: var(--cream);
+  color: var(--dark-color);
+  font-family: 'Cutive Mono', monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.titulo-notas {
+  align-self: flex-end;
+  margin-right: 10px;
+  transition: 800ms;
+}
+
+.titulo-notas:hover {
+  transform: scale(3.4) translateX(11%);
+}
+
+.sub-notas {
+  text-align: right;
+  align-self: flex-end;
+  margin-right: 10px;
+  padding-right: 25px;
+  margin-bottom: 4%;
+}
+
+.texto {
+  font-size: 1.3em;
+}
+
+.texto.intro {
+  padding: 0 20% 0 20%;
+  align-self: center;
+}
+
+.triangulo {
+  margin: 3em 0 2em 1em;
+  display: flex;
+  max-width: 100%;
+  flex-direction: column;
+  gap: 0.5em;
+  word-spacing: 0;
+  letter-spacing: 0;
+
+}
+
+.b {
+  padding-left: 3%;
+}
+
+.b:hover {
+  background-color: var(--pink);
+  color: var(--red);
+}
+
+.c {
+  padding-left: 6%;
+}
+
+.c:hover {
+  background-color: var(--dark-color);
+  color: var(--green);
+}
+
+.d {
+  padding-left: 9%;
+}
+
+.d:hover {
+  background-color: var(--red);
+  color: var(--cream);
+}
+
+.e {
+  padding-left: 12%;
+}
+
+.e:hover {
+  background-color: var(--black);
+  color: var(--cream);
+}
+
+.f {
+  padding-left: 15%;
+}
+
+.f:hover {
+  background-color: var(--green);
+  color: var(--dark-color);
+}
+
+
+
+.content-notas.dos {
+  background-color: var(--yellow);
+  color: var(--orange);
+}
+
+.quote {
+  align-self: flex-end;
+  margin: 2em 2em 0 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+  font-family: 'Jersey 10', monospace;
+  font-size: 2em;
+}
+
+
+.quote>p {
+  text-align: right;
+  transition: 1s;
+}
+
+.quote>p:hover {
+  transform: scale(1.5) translateX(-100px);
+}
+
+.pie {
+  margin: 2em 30% 2em 1em;
+  font-size: 1.2em;
+  font-weight: 800;
+}
+
+.como {
+  display: flex;
+}
+
+.subtitulo-como {
+  align-self: center;
+  margin: 0.5em 0 1em;
+  font-family: 'Jersey 10', monospace;
+  font-size: 4rem;
+}
+
+.diagrama {
+  max-width: 40%;
+  height: auto;
+  align-self: flex-start;
+  margin: 1em 5em;
+}
+
+.diagrama>img {
+  border: 4px solid var(--darker-pink);
+}
+
+.explicacion {
+  margin: 1em 2em 2em 0;
+  font-size: 1.4em;
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+  align-self: center;
+}
+
+.content-notas.tres {
+  background-color: var(--pink);
+  color: var(--darker-pink);
 }

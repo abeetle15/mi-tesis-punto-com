@@ -12,32 +12,120 @@
     rel="stylesheet">
 
   <title>notas del programa</title>
+
 </head>
 
 <body>
-  <div class="content">
+  <div class="content-notas">
     <a href="index.html">
       <div class="contGoHome contBtns">
         <img class='goHomeBtn' src="imagenes/cool-monitor.svg" alt="orquidea">
         <p class="goHomeText popUpText">vuelve a casa</p>
       </div>
     </a>
+
+    <h1 class="titulo-notas">METANOIA 2024</h1>
+    <h2 class="subtitulo-bio sub-notas">bogotá, colombia</h2>
+
+    <p class="texto intro">METANOIA<sup>1</sup> 2024 es una instalación sonora viva. Un espacio y tiempo de
+      transformación e
+      interacción
+      respetuosa entre los seres que lo componen. La instalación interpreta las señales eléctricas que obtenemos de la
+      interacción entre humanos, plantas, espacio y tecnología en una experiencia conformada por diferentes capas
+      sonoras inmersivas. Haciendo estas interacciones audibles, sentimos un poco más cercanos o comprensibles en
+      tiempos “humanos” la vida de las plantas.</p>
+
+    <div class="texto triangulo">
+      <p class="a">
+        Explora la transformación:
+      </p>
+      <p class="b">
+        Personal: a través de la composición
+      </p>
+      <p class="c">
+        Musical: a través de los resultados sonoros que contienen los procesos de interacción
+      </p>
+
+      <p class="d">
+        Conjunta: tomando como agentes al espacio y quienes lo habitan
+      </p>
+      <p class="e">
+        Académica: quebrando la division entre composición y audiencia
+      </p>
+      <p class="f">
+        Categórica: usando la tecnología como vínculo en lugar de distanciarnos
+      </p>
+    </div>
   </div>
 
+  <div class="content-notas dos">
+    <div class="quote">
+      <p class="texto">When we actively listen to music, we are vicariously participating in the community defined
+        through that
+        music."</p>
+      <p class="texto">[Garton, 1995]</p>
+    </div>
+
+    <p class="pie">
+      (1)Metanoia: se define como el proceso de transformación que cambia la forma de pensar, sentir, de ser o de vivir
+      de
+      alguien o incluso una explicitación de algo que estaba en nuestro pasado de manera oculta o latente, de tal manera
+      que nos parece que leemos algo
+      que no podíamos expresar, pero que ya sabíamos incluso desde antes de saber
+      leer (así describe Flaubert su primera lectura de El Quijote).
+    </p>
 
 
-  <script>
-    const goHome = document.querySelector('.contGoHome')
-    const goHomeText = document.querySelector('.goHomeText')
 
-    goHome.addEventListener('mouseenter', () => {
-      goHomeText.classList.toggle('hover')
-    })
-    goHome.addEventListener('mouseleave', () => {
-      goHomeText.classList.toggle('hover')
+  </div>
+  </div>
 
-    })
-  </script>
+  <div class="content-notas tres">
+    <h2 class="subtitulo-como">cómo funciona?</h3>
+
+      <div class="como">
+        <div class="diagrama">
+          <img src="imagenes/diagrama.jpeg">
+        </div>
+
+        <div class="explicacion">
+
+          <p class="list">
+            1. Captura de las señales eléctricas de las plantas con electrodos
+          </p>
+          <p class="list">
+            2. Las plantas se conectan al computador mediante un circuito
+          </p>
+          <p class="list">
+            3. El primer software arroja los datos numéricos de los cambios de las señales eléctricas (en voltaje)
+          </p>
+          <p class="list">
+            4. Se transportan del lenguaje de programación que obtiene los datos al que los utiliza para cambiar
+            parámetros
+            sonoros
+          </p>
+          <p class="list">
+            5. Se utilizan los números para generar cambios en los parámetros de los sintetizadores, e.g.
+          </p>
+
+        </div>
+      </div>
+
+
+
+
+      <script>
+        const goHome = document.querySelector('.contGoHome')
+        const goHomeText = document.querySelector('.goHomeText')
+
+        goHome.addEventListener('mouseenter', () => {
+          goHomeText.classList.toggle('hover')
+        })
+        goHome.addEventListener('mouseleave', () => {
+          goHomeText.classList.toggle('hover')
+
+        })
+      </script>
 </body>
 
 </html>
