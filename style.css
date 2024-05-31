@@ -111,7 +111,7 @@ video {
 }
 
 .contTitulo {
-  transition: 600ms;
+  transition: 4s;
   z-index: 2;
 }
 
@@ -382,6 +382,14 @@ h1 {
   align-self: center;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
+.meta-def:hover {
+  background-color: var(--green);
+}
+
 .triangulo {
   margin: 3em 0 2em 1em;
   display: flex;
@@ -416,7 +424,7 @@ h1 {
 }
 
 .d:hover {
-  background-color: var(--red);
+  background-color: var(--orange);
   color: var(--cream);
 }
 
@@ -438,7 +446,26 @@ h1 {
   color: var(--dark-color);
 }
 
+.cont-pie {
+  position: absolute;
+  display: none;
+  width: 60%;
+  top: 36%;
+  left: 15%;
+  background-color: var(--yellow);
+  color: var(--orange);
+  border: 4px solid var(--orange);
+  padding: 1em;
+}
 
+.active {
+  display: flex;
+}
+
+.pie {
+  font-size: 1.3em;
+  font-weight: 800;
+}
 
 .content-notas.dos {
   background-color: var(--yellow);
@@ -462,13 +489,11 @@ h1 {
 }
 
 .quote>p:hover {
-  transform: scale(1.5) translateX(-100px);
+  transform: scale(1.1) translateX(-10px);
 }
 
-.pie {
-  margin: 2em 30% 2em 1em;
-  font-size: 1.3em;
-  font-weight: 800;
+.autor {
+  margin-bottom: 1em;
 }
 
 .como {

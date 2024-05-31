@@ -27,7 +27,9 @@
     <h1 class="titulo-notas">METANOIA 2024</h1>
     <h2 class="subtitulo-bio sub-notas">bogotá, colombia</h2>
 
-    <p class="texto intro">METANOIA<sup>1</sup> 2024 es una instalación sonora viva. Un espacio y tiempo de
+    <p class="texto intro"><span class="meta-def underline">METANOIA<sup>1</sup></span> 2024 es una instalación sonora
+      viva. Un
+      espacio y tiempo de
       transformación e
       interacción
       respetuosa entre los seres que lo componen. La instalación interpreta las señales eléctricas que obtenemos de la
@@ -56,6 +58,20 @@
         Categórica: usando la tecnología como vínculo en lugar de distanciarnos
       </p>
     </div>
+
+    <div class="cont-pie">
+      <p class="pie">
+        (1)Metanoia: se define como el proceso de transformación que cambia la forma de pensar, sentir, de ser o de
+        vivir
+        de
+        alguien o incluso una explicitación de algo que estaba en nuestro pasado de manera oculta o latente, de tal
+        manera
+        que nos parece que leemos algo
+        que no podíamos expresar, pero que ya sabíamos incluso desde antes de saber
+        leer (así describe Flaubert su primera lectura de El Quijote).
+      </p>
+    </div>
+
   </div>
 
   <div class="content-notas dos">
@@ -63,21 +79,10 @@
       <p class="texto">When we actively listen to music, we are vicariously participating in the community defined
         through that
         music."</p>
-      <p class="texto">[Garton, 1995]</p>
+      <p class="texto autor">[Garton, 1995]</p>
     </div>
-
-    <p class="pie">
-      (1)Metanoia: se define como el proceso de transformación que cambia la forma de pensar, sentir, de ser o de vivir
-      de
-      alguien o incluso una explicitación de algo que estaba en nuestro pasado de manera oculta o latente, de tal manera
-      que nos parece que leemos algo
-      que no podíamos expresar, pero que ya sabíamos incluso desde antes de saber
-      leer (así describe Flaubert su primera lectura de El Quijote).
-    </p>
-
-
-
   </div>
+
   </div>
 
   <div class="content-notas tres">
@@ -123,8 +128,18 @@
         })
         goHome.addEventListener('mouseleave', () => {
           goHomeText.classList.toggle('hover')
-
         })
+
+        const definicion = document.querySelector('.meta-def');
+        const notaPie = document.querySelector('.cont-pie')
+
+        definicion.addEventListener('mouseenter', () => {
+          notaPie.classList.toggle('active');
+        })
+        definicion.addEventListener('mouseleave', () => {
+          notaPie.classList.toggle('active');
+        })
+
       </script>
 </body>
 
