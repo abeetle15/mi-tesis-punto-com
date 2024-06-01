@@ -8,14 +8,58 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Rubik+Mono+One&display=swap=Jersey+10&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Rubik+Mono+One&display=swap=Jersey+10&display=swap=Yarndings+12&display=swap"
     rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yarndings+12&display=swap" rel="stylesheet">
 
   <title>referentes</title>
 </head>
 
 <body>
   <div class="content-referentes">
+
+    <div class="symbols">
+      <p class="symbol">
+        a
+      </p>
+      <p class="symbol">
+        w
+      </p>
+      <p class="symbol">
+        d
+      </p>
+      <p class="symbol">
+        c
+      </p>
+      <p class="symbol">
+        g
+      </p>
+      <p class="symbol">
+        h
+      </p>
+      <p class="symbol">
+        j
+      </p>
+      <p class="symbol">
+        y
+      </p>
+      <p class="symbol">
+        u
+      </p>
+      <p class="symbol">
+        z
+      </p>
+      <p class="symbol">
+        x
+      </p>
+      <p class="symbol">
+        v
+      </p>
+    </div>
+
     <a href="index.html">
       <div class="contGoHome contBtns">
         <img class='goHomeBtn' src="imagenes/cool-monitor.svg" alt="orquidea">
@@ -54,9 +98,11 @@
         <img class="foto-larga" src="imagenes/referentes/radio-art-img.jpeg">
       </div>
     </a>
+
   </div>
 
   <div class="content-referentes">
+
 
   </div>
 
@@ -72,6 +118,17 @@
       goHomeText.classList.toggle('hover')
 
     })
+
+    const symbols = document.querySelectorAll('.symbol');
+
+    window.addEventListener('DOMContentLoaded', () => {
+
+      symbols.forEach(symbol => {
+        symbol.style.top = `${Math.floor(Math.random() * 1400) + 130}px`
+        symbol.style.left = `${Math.floor(Math.random() * 98)}%`
+      })
+    })
+
   </script>
 </body>
 

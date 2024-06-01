@@ -343,6 +343,17 @@ h1 {
   transform: skew(-2deg, -3deg) translateY(-50px);
 }
 
+.symbol {
+  font-family: "Yarndings 12", monospace;
+  font-size: 2em;
+  color: var(--cream);
+  position: absolute;
+}
+
+.symbols {
+  font-family: "Yarndings 12", monospace;
+}
+
 /* --------------------------- notas del programa --------------------------- */
 
 .content-notas {
