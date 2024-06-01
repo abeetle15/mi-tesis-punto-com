@@ -480,8 +480,8 @@ h1 {
 }
 
 .content-notas.dos {
-  background-color: var(--yellow);
-  color: var(--orange);
+  background-color: var(--black);
+  color: var(--green);
 }
 
 .quote {

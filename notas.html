@@ -74,6 +74,40 @@
 
   </div>
 
+  </div>
+
+  <div class="content-notas tres">
+    <h3 class="subtitulo-como">¿Cómo funciona?</h3>
+
+    <div class="como">
+      <div class="diagrama">
+        <img src="imagenes/diagrama.jpeg">
+      </div>
+
+      <div class="explicacion">
+
+        <p class="list">
+          1. Captura de las señales eléctricas de las plantas con electrodos
+        </p>
+        <p class="list">
+          2. Las plantas se conectan al computador mediante un circuito
+        </p>
+        <p class="list">
+          3. El primer software arroja los datos numéricos de los cambios de las señales eléctricas (en voltaje)
+        </p>
+        <p class="list">
+          4. Se transportan del lenguaje de programación que obtiene los datos al que los utiliza para cambiar
+          parámetros
+          sonoros
+        </p>
+        <p class="list">
+          5. Se utilizan los números para generar cambios en los parámetros de los sintetizadores, e.g.
+        </p>
+
+      </div>
+    </div>
+  </div>
+
   <div class="content-notas dos">
     <div class="quote">
       <p class="texto">When we actively listen to music, we are vicariously participating in the community defined
@@ -83,64 +117,32 @@
     </div>
   </div>
 
-  </div>
-
-  <div class="content-notas tres">
-    <h2 class="subtitulo-como">Cómo funciona?</h3>
-
-      <div class="como">
-        <div class="diagrama">
-          <img src="imagenes/diagrama.jpeg">
-        </div>
-
-        <div class="explicacion">
-
-          <p class="list">
-            1. Captura de las señales eléctricas de las plantas con electrodos
-          </p>
-          <p class="list">
-            2. Las plantas se conectan al computador mediante un circuito
-          </p>
-          <p class="list">
-            3. El primer software arroja los datos numéricos de los cambios de las señales eléctricas (en voltaje)
-          </p>
-          <p class="list">
-            4. Se transportan del lenguaje de programación que obtiene los datos al que los utiliza para cambiar
-            parámetros
-            sonoros
-          </p>
-          <p class="list">
-            5. Se utilizan los números para generar cambios en los parámetros de los sintetizadores, e.g.
-          </p>
-
-        </div>
-      </div>
 
 
 
 
-      <script>
-        const goHome = document.querySelector('.contGoHome')
-        const goHomeText = document.querySelector('.goHomeText')
+  <script>
+    const goHome = document.querySelector('.contGoHome')
+    const goHomeText = document.querySelector('.goHomeText')
 
-        goHome.addEventListener('mouseenter', () => {
-          goHomeText.classList.toggle('hover')
-        })
-        goHome.addEventListener('mouseleave', () => {
-          goHomeText.classList.toggle('hover')
-        })
+    goHome.addEventListener('mouseenter', () => {
+      goHomeText.classList.toggle('hover')
+    })
+    goHome.addEventListener('mouseleave', () => {
+      goHomeText.classList.toggle('hover')
+    })
 
-        const definicion = document.querySelector('.meta-def');
-        const notaPie = document.querySelector('.cont-pie')
+    const definicion = document.querySelector('.meta-def');
+    const notaPie = document.querySelector('.cont-pie')
 
-        definicion.addEventListener('mouseenter', () => {
-          notaPie.classList.toggle('active');
-        })
-        definicion.addEventListener('mouseleave', () => {
-          notaPie.classList.toggle('active');
-        })
+    definicion.addEventListener('mouseenter', () => {
+      notaPie.classList.toggle('active');
+    })
+    definicion.addEventListener('mouseleave', () => {
+      notaPie.classList.toggle('active');
+    })
 
-      </script>
+  </script>
 </body>
 
 </html>
