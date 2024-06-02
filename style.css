@@ -400,6 +400,7 @@ h1 {
 
 .meta-def:hover {
   background-color: var(--green);
+  cursor: help;
 }
 
 .triangulo {
