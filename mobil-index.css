@@ -1,0 +1,92 @@
+:root {
+  --dark-color: #BDB4FF;
+  --light-color: #EAFC88;
+  --black: #141414;
+  --green: #EAFC88;
+  --cream: #FFFEEC;
+  --orange: #ffa310;
+  --yellow: #f9e395;
+  --blue: #D3D9F1;
+  --red: #FF6424;
+  --pink: #f5d4ce;
+  --darker-pink: #f48c8a;
+}
+
+@media (max-width: 440px) {
+
+  .contTitulo {
+    max-width: 70%;
+    overflow-wrap: break-word;
+    align-self: flex-start;
+  }
+
+  .main-title {
+    font-size: 4em;
+    margin-left: 2rem;
+  }
+
+  .contInfo {
+    position: absolute;
+    top: 33% !important;
+    left: 5% !important;
+    transition: 20ms;
+    max-width: 150px;
+  }
+
+  .infoBtn {
+    z-index: 5;
+    max-width: 100px;
+  }
+
+  .contNotes {
+    position: absolute;
+    top: 70% !important;
+    left: 5% !important;
+    max-width: 150px;
+    height: fit-content;
+  }
+
+  .notesBtn {
+    z-index: 5;
+    max-width: 100px;
+  }
+
+  .contBitacora {
+    position: absolute;
+    top: 33% !important;
+    right: 5% !important;
+    max-width: 150px;
+  }
+
+  .bitacoraBtn {
+    z-index: 5;
+    max-width: 100px;
+  }
+
+  .contReferentes {
+    position: absolute;
+    top: 70% !important;
+    right: 5% !important;
+    max-width: 150px;
+    height: fit-content;
+  }
+
+  .referentesBtn {
+    z-index: 5;
+    max-width: 100px;
+  }
+
+  .contInfo:hover,
+  .contNotes:hover,
+  .contBitacora:hover,
+  .contReferentes:hover {
+    transform: none;
+  }
+
+  .popUpText {
+    display: block !important;
+    color: var(--green);
+    max-width: 100%;
+  }
+
+}
