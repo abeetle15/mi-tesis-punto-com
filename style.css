@@ -182,7 +182,7 @@ h1 {
 
 /* ---------------------------------- info ---------------------------------- */
 .content-info {
-  height: 100svh;
+  height: 100vh;
   background-color: var(--dark-color);
   color: var(--light-color);
   font-family: 'Cutive Mono', monospace;
@@ -195,7 +195,7 @@ h1 {
 .titulo-bio {
   margin-left: 17%;
   font-size: 8vw;
-  transition: 600ms;
+  transition: 400ms;
 }
 
 .titulo-bio:hover {
