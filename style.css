@@ -216,7 +216,7 @@ h1 {
   position: absolute;
   top: 54%;
   left: 4%;
-  font-size: 1.2rem;
+  font-size: 1.3vw;
   font-weight: 800;
 
 }
@@ -251,7 +251,7 @@ h1 {
   right: 6%;
   font-family: 'Jersey 10', monospace;
   letter-spacing: 1rem;
-  font-size: 2rem;
+  font-size: 3vw;
 }
 
 /* ------------------------------- referentes ------------------------------- */
