@@ -159,6 +159,10 @@ h1 {
   width: 100%;
 }
 
+.bitacoraText {
+  text-align: center;
+}
+
 .contReferentes {
   position: absolute;
   top: 65%;
@@ -555,4 +559,17 @@ h1 {
 .content-notas.tres {
   background-color: var(--pink);
   color: var(--darker-pink);
+}
+
+/* -------------------------------- bitacora -------------------------------- */
+
+.content-bitacora {
+  height: 100vh;
+  background-color: var(--green);
+  color: var(--darker-pink);
+  font-family: 'Cutive Mono', monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
