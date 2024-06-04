@@ -29,7 +29,6 @@ svg {
   --red: #FF6424;
   --pink: #f5d4ce;
   --darker-pink: #f48c8a;
-
 }
 
 * {
@@ -118,7 +117,7 @@ video {
 h1 {
   font-family: 'Jersey 10', monospace;
   letter-spacing: 1.5rem;
-  font-size: 6rem;
+  font-size: 12vw;
   margin-top: 3rem;
 }
 
@@ -127,12 +126,12 @@ h1 {
   position: absolute;
   top: 34%;
   left: 15%;
-  transition: 20ms;
+  width: 10%;
 }
 
 .infoBtn {
   z-index: 5;
-  width: 150px;
+  width: 100%;
 
 }
 
@@ -140,33 +139,36 @@ h1 {
   position: absolute;
   top: 65%;
   left: 20%;
+  width: 10%;
 }
 
 .notesBtn {
   z-index: 5;
-  width: 150px;
+  width: 100%;
 }
 
 .contBitacora {
   position: absolute;
   top: 34%;
   right: 15%;
+  width: 10%;
 }
 
 .bitacoraBtn {
   z-index: 5;
-  width: 150px;
+  width: 100%;
 }
 
 .contReferentes {
   position: absolute;
   top: 65%;
   right: 20%;
+  width: 10%;
 }
 
 .referentesBtn {
   z-index: 5;
-  width: 150px;
+  width: 100%;
 }
 
 .contInfo:hover,
