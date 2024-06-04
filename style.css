@@ -49,7 +49,7 @@ svg {
 
 .popUpText {
   background-color: black;
-  font-size: 1.4rem;
+  font-size: 1.5vw;
   text-align: center;
   display: none;
 }
@@ -124,8 +124,8 @@ h1 {
 
 .contInfo {
   position: absolute;
-  top: 34%;
-  left: 15%;
+  top: 65%;
+  left: 20%;
   width: 10%;
 }
 
@@ -137,8 +137,8 @@ h1 {
 
 .contNotes {
   position: absolute;
-  top: 65%;
-  left: 20%;
+  top: 34%;
+  left: 15%;
   width: 10%;
 }
 
@@ -347,9 +347,18 @@ h1 {
   transform: skew(-2deg, -3deg) translateY(-50px);
 }
 
+.cont-referente.columbia {
+  bottom: -20%;
+  right: 5%;
+}
+
+.cont-referente.columbia:hover {
+  transform: skew(-2deg, -3deg) translateY(-50px) translateX(-70px);
+}
+
 .symbol {
   font-family: "Yarndings 12", monospace;
-  font-size: 2em;
+  font-size: 3vw;
   color: var(--cream);
   position: absolute;
 }
