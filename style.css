@@ -573,3 +573,15 @@ h1 {
   align-items: flex-start;
   justify-content: flex-start;
 }
+
+.titulo-bitacora {
+  align-self: flex-end;
+  margin-right: 10px;
+  transition: 3s;
+  font-size: 8vw;
+  transition: 400ms;
+}
+
+.titulo-bitacora:hover {
+  transform: scale(1.5) translate(-12%, -5%);
+}
