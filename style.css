@@ -196,6 +196,7 @@ h1 {
   margin-left: 17%;
   font-size: 8vw;
   transition: 400ms;
+  width: 60%;
 }
 
 .titulo-bio:hover {
