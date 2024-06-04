@@ -256,7 +256,7 @@ h1 {
 
 /* ------------------------------- referentes ------------------------------- */
 .content-referentes {
-  height: 100svh;
+  height: 100vh;
   background-color: var(--black);
   color: var(--green);
   font-family: 'Cutive Mono', monospace;
