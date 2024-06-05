@@ -313,7 +313,8 @@ h1 {
 }
 
 .cont-referente.brad:hover {
-  transform: skew(2deg, 3deg) translate(50px, -40px);
+  transform: skew(2deg, 3deg) translate(7vw);
+  z-index: 30;
 }
 
 
@@ -326,7 +327,8 @@ h1 {
 
 
 .cont-referente.njinla:hover {
-  transform: skew(2deg, 3deg) translateY(60px);
+  transform: skew(2deg, 3deg) translateY(8vw);
+  z-index: 30;
 }
 
 .cont-referente.mileece {
@@ -337,7 +339,8 @@ h1 {
 }
 
 .cont-referente.mileece:hover {
-  transform: skew(-2deg, -3deg) translateY(-50px);
+  transform: skew(-2deg, -3deg) translateY(-4vw);
+  z-index: 30;
 }
 
 .cont-referente.soundStudies {
@@ -348,7 +351,8 @@ h1 {
 }
 
 .cont-referente.soundStudies:hover {
-  transform: skew(3deg, 2deg) translateY(50px);
+  transform: skew(3deg, 2deg) translateY(4vw);
+  z-index: 30;
 }
 
 .cont-referente.radioArt {
@@ -360,6 +364,7 @@ h1 {
 
 .cont-referente.radioArt:hover {
   transform: skew(-2deg, -3deg) translateY(-50px);
+  z-index: 30;
 }
 
 .cont-referente.columbia {
@@ -370,7 +375,8 @@ h1 {
 }
 
 .cont-referente.columbia:hover {
-  transform: skew(-2deg, -3deg) translateY(-50px) translateX(-70px);
+  transform: skew(-2deg, -3deg) translateY(-50px) translateX(-8vw);
+  z-index: 30;
 }
 
 .cont-referente.ferrari {
@@ -381,7 +387,7 @@ h1 {
 }
 
 .cont-referente.ferrari:hover {
-  transform: skew(-2deg, -3deg) translateY(-50px) translateX(-70px);
+  transform: skew(-2deg, -3deg) translateY(-3vw) translateX(5vw);
 }
 
 .symbol {
