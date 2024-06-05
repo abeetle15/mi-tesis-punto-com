@@ -585,3 +585,10 @@ h1 {
 .titulo-bitacora:hover {
   transform: scale(1.5) translate(-12%, -5%);
 }
+
+.cont-video {
+  width: 50%;
+  height: 60%;
+  align-self: center;
+  margin-top: 15%;
+}
