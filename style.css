@@ -330,8 +330,8 @@ h1 {
 }
 
 .cont-referente.mileece {
-  top: 77%;
-  left: 25%;
+  top: 83%;
+  left: 20%;
   height: 20vw;
   width: 20vw;
 }
@@ -373,6 +373,17 @@ h1 {
   transform: skew(-2deg, -3deg) translateY(-50px) translateX(-70px);
 }
 
+.cont-referente.ferrari {
+  bottom: -60%;
+  left: 45%;
+  height: 20vw;
+  width: 20vw;
+}
+
+.cont-referente.ferrari:hover {
+  transform: skew(-2deg, -3deg) translateY(-50px) translateX(-70px);
+}
+
 .symbol {
   font-family: "Yarndings 12", monospace;
   font-size: 3vw;
@@ -383,6 +394,7 @@ h1 {
 .symbols {
   font-family: "Yarndings 12", monospace;
 }
+
 
 /* --------------------------- notas del programa --------------------------- */
 
