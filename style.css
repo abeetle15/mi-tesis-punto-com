@@ -228,8 +228,8 @@ h1 {
 .foto-cow {
   width: 40%;
   position: absolute;
-  top: 22%;
-  right: 6%;
+  top: 22% !important;
+  right: 6% !important;
 
 }
 
@@ -532,7 +532,7 @@ h1 {
   align-self: center;
   margin: 0.5em 0 1em;
   font-family: 'Jersey 10', monospace;
-  font-size: 4rem;
+  font-size: 3vw;
 }
 
 .diagrama {
@@ -548,11 +548,11 @@ h1 {
 
 .explicacion {
   margin: 1em 2em 2em 0;
-  font-size: 1.4em;
+  font-size: 2vw;
   font-weight: 800;
   display: flex;
   flex-direction: column;
-  gap: 0.8em;
+  gap: 6vh;
   align-self: center;
 }
 
