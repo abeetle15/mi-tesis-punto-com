@@ -502,12 +502,12 @@ h1 {
 
 .quote {
   align-self: flex-end;
-  margin: 2em 2em 0 40%;
+  margin: 1em 2em 0 40%;
   display: flex;
   flex-direction: column;
   gap: 0.4em;
   font-family: 'Jersey 10', monospace;
-  font-size: 2em;
+  font-size: 4vw;
 }
 
 
@@ -530,9 +530,9 @@ h1 {
 
 .subtitulo-como {
   align-self: center;
-  margin-top: 0.5em;
+  margin-top: 0.3em;
   font-family: 'Jersey 10', monospace;
-  font-size: 4vw;
+  font-size: 7vw;
 }
 
 .diagrama {
