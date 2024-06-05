@@ -339,7 +339,7 @@ h1 {
 }
 
 .cont-referente.mileece:hover {
-  transform: skew(-2deg, -3deg) translateY(-4vw);
+  transform: skew(-2deg, -3deg) translate(-4vw, 5vw);
   z-index: 30;
 }
 
@@ -392,9 +392,14 @@ h1 {
 
 .symbol {
   font-family: "Yarndings 12", monospace;
-  font-size: 3vw;
+  font-size: 4vw;
   color: var(--cream);
   position: absolute;
+}
+
+.symbol:hover {
+  color: var(--green);
+  cursor: help;
 }
 
 .symbols {
