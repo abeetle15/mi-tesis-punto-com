@@ -380,7 +380,7 @@ h1 {
 }
 
 .cont-referente.ferrari {
-  bottom: -60%;
+  bottom: -40%;
   left: 45%;
   height: 20vw;
   width: 20vw;
@@ -388,6 +388,43 @@ h1 {
 
 .cont-referente.ferrari:hover {
   transform: skew(-2deg, -3deg) translateY(-3vw) translateX(5vw);
+  z-index: 30;
+}
+
+.cont-referente.cage {
+  bottom: -90%;
+  right: 2%;
+  height: 20vw;
+  width: 20vw;
+}
+
+.cont-referente.cage:hover {
+  transform: skew(-2deg, -3deg) translateY(-6vw) translateX(-10vw);
+  z-index: 30;
+}
+
+.cont-referente.kaija {
+  bottom: -70%;
+  left: 8%;
+  height: 20vw;
+  width: 20vw;
+}
+
+.cont-referente.kaija:hover {
+  transform: skew(-2deg, -3deg) translateY(-6vw) translateX(8vw);
+  z-index: 30;
+}
+
+.cont-referente.shigemori {
+  bottom: -90%;
+  left: 38%;
+  height: 20vw;
+  width: 20vw;
+}
+
+.cont-referente.shigemori:hover {
+  transform: skew(-2deg, -3deg) translateY(-6vw) translateX(-8vw);
+  z-index: 30;
 }
 
 .symbol {
@@ -598,8 +635,8 @@ h1 {
 
 .content-bitacora {
   height: 100vh;
-  background-color: var(--green);
-  color: var(--darker-pink);
+  background-color: #000000;
+  color: var(--blue);
   font-family: 'Cutive Mono', monospace;
   display: flex;
   flex-direction: column;
@@ -620,8 +657,8 @@ h1 {
 }
 
 .cont-video {
-  width: 50vw;
-  height: 30vw;
+  width: 70vw;
+  height: 40vw;
   align-self: center;
   margin-top: 15%;
 }
