@@ -272,13 +272,13 @@ h1 {
 
 .titulo-referentes {
   align-self: flex-end;
-  margin-right: 1em;
+  margin-right: 2vw;
   transition: 800ms;
-  font-size: 7vw;
+  font-size: 8vw;
 }
 
 .titulo-referentes:hover {
-  transform: scale(2);
+  transform: scale(2) translateX(-10vw);
 }
 
 .cont-referente {
@@ -657,7 +657,7 @@ h1 {
 }
 
 .cont-video {
-  width: 70vw;
+  width: 60vw;
   height: 40vw;
   align-self: center;
   margin-top: 15%;
